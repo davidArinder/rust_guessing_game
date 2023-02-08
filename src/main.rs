@@ -25,7 +25,7 @@ fn main() {
         // because the to use `read_line` the user presses `enter` which adds a new line character
         // that must be removed.
         let guess: u32 = match guess.trim().parse() {
-            // match: if guess successfully converted to number, Ok matches and we return num
+            // match: if guess successfully converted to a number, Ok matches and we return num
             // if guess cannot be converted to a number, Err matches and we ignore it and move to next guess
             Ok(num) => num,
             Err(_) => continue,
